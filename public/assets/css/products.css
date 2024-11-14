@@ -1,0 +1,144 @@
+.pagination {
+  margin-bottom: 0;
+  margin-top: 24px;
+  padding-bottom: 60px;
+}
+
+.product-img {
+    height: 220px;
+    margin: 16px 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.card-img-top {
+    width: 270px;
+    height: 200px;
+    transition: all .2s linear;
+}
+
+.produce-name {
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    transition: all .1s linear;
+}
+
+.produce-name:hover {
+    color: #0d6efd;
+}
+
+.product-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 0;
+    width: 130px;
+    height: 32px;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 21px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product-properties {
+    margin: 0 -4px 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.property {
+    margin: 4px 8px;
+    color: #5e5e5e;
+    font-size: 14px;
+}
+
+.product-date {
+    margin-left: 5px;
+    margin-bottom: 16px;
+}
+
+.product-text {
+    height: 72px;
+    overflow: hidden;
+    margin-top: 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+/* Phần hover sản phẩm */
+.card .card-content .card-title a {
+    font-weight: bold;
+    
+  }
+  .card {
+    overflow: hidden;
+    position: relative;
+    height: 500px!important;
+  }
+  /*  */
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    padding-bottom: 50px; /* điều chỉnh giá trị này tùy thuộc vào nhu cầu của bạn */
+}
+
+.card-content {
+  z-index: 1;
+  position: relative;
+}
+/*  */
+  .card-content {
+    /* height: 80px; */
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .card:hover .card-content {
+    transform: translateY(-100%);
+    padding-top: 18px;
+  }
+  .product-img {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .card:hover .product-img {
+    opacity: 0.4;
+   
+  }
+  
+  .product-actions {
+    padding-right: 46px;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card:hover .product-actions {
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  .card:hover .product-actions a.btn-secondary {
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card:hover .product-actions a.btn-primary {
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }

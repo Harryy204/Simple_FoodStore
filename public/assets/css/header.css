@@ -1,0 +1,146 @@
+.dropdown-menu.header-menu-choose {
+    display: block;
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+    transition: all .1s linear;
+}
+
+.nav-item {
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.btn-dmsp::after {
+    display: none;
+}
+
+.btn-dmsp {
+    border: none;
+    height: 100%;
+}
+
+.btn-dmsp>a {
+    height: 100%;
+    font-size: 16px;
+}
+
+.nav-header .nav-link:hover {
+    color: rgb(13, 110, 253);
+}
+
+.dropdown:hover .header-menu-choose {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.list-group-container {
+    padding-bottom: 12px;
+}
+
+.list-group-container .list-group-item-action:hover {
+    background-color: unset;
+}
+
+.list-group-item:hover {
+    color: var(--bs-primary);
+}
+
+.list-product-content {
+    margin: 0;
+    padding: 16px 16px 8px;
+}
+
+.list-group-container .list-group-item {
+    border: none;
+    font-size: 0.875rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.list-group {
+    width: 200px;
+}
+
+.list-product-by-hot .list-group {
+    width: 260px;
+}
+
+.cart-block {
+    position: relative;
+}
+
+.cart-quantity {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 1px;
+    right: 0;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+/* #wrapper {
+    position: relative;
+} */
+
+.modal-notify {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .1s linear;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-notify.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.notify {
+    width: 300px;
+    height: 200px;
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.notify-header {
+    height: 50px;
+    background-color: rgb(13, 110, 253);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.content {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

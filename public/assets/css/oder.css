@@ -1,0 +1,24 @@
+.oder-list {
+    min-height: 700px;
+}
+
+.oder-item {
+    height: 100px;
+    transition: all .1s linear;
+}
+
+.oder-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.oder-link-disabled[disabled] {
+    pointer-events: none;
+}
+
+.phongbi {
+    height: 0.1875rem;
+    width: 100%;
+    /* background-position-x: -1.875rem; */
+    background-size: 7.25rem 0.1875rem;
+    background-image: repeating-linear-gradient(45deg,#6fa6d6,#6fa6d6 33px,transparent 0,transparent 41px,#f18d9b 0,#f18d9b 74px,transparent 0,transparent 82px);
+}
