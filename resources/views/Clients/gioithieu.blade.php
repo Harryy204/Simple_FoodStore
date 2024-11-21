@@ -1,9 +1,9 @@
 @extends('layouts.clients')
 
-@section('style')
+{{-- @section('style')
 <link href="{{ asset('assets/css/all.min.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-<link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/main.css') }}" rel="stylesheet"> --}}
 <style>
     .team-item {
         border: 2px solid #f0f0f0;
@@ -25,7 +25,7 @@
         transform: scale(1.1);
     }
 </style>
-@endsection
+{{-- @endsection --}}
 
 @section('content')
 <div class="container-xxl py-5">
@@ -88,7 +88,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="team-item text-center  overflow-hidden">
                     <div class="border-5 overflow-hidden m-4">
-                        <img class="img-fluid" src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff6ccabba-ea38-411f-a673-04f26b5e919c_980x980.jpeg" alt="Thành viên 1">
+                        <img class="img-fluid" src="{{ asset('assets/imgs/gordon.jpg') }}" style="height:245px" alt="Thành viên 1">
                     </div>
                     <h5 class="mb-0">Gordon Ramsay</h5> 
                     <div class="d-flex justify-content-center mt-3 mb-4">
@@ -101,7 +101,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="team-item text-center overflow-hidden">
                     <div class=" overflow-hidden m-4" >
-                        <img class="img-fluid" src="https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/445180783_839865234841379_7104164190871546304_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dtdefsm33lgQ7kNvgHacj3K&_nc_zt=23&_nc_ht=scontent.fdad3-4.fna&_nc_gid=Aymlo_qPvRkLHvxShvbN9Om&oh=00_AYDl72RRMqol7U169WaMsu6Z0yDOjEv1dr6mw3kTzgKSAQ&oe=673A9D54" style="height: 245px" alt="Thành viên 2">
+                        <img class="img-fluid" src="{{ asset('assets/imgs/joe.jpg') }}" style="height: 245px" alt="Thành viên 2">
                     </div>
                     <h5 class="mb-0">Joe Bastianich</h5>
                     <div class="d-flex justify-content-center mt-3 mb-4">
@@ -114,7 +114,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="team-item text-center overflow-hidden">
                     <div class=" overflow-hidden m-4">
-                        <img class="img-fluid" src="https://www.sandiegowineclassic.com/wp-content/uploads/dh_2017_07_ChefGrahamElliott_145-1_CK_A-1500x1500.jpg" style="width:245px" alt="Thành viên 3">
+                        <img class="img-fluid" src="{{ asset('assets/imgs/graham.jpg') }}" style="width:245px" alt="Thành viên 3">
                     </div>
                     <h5 class="mb-0">Graham Elliot</h5>
                     <div class="d-flex justify-content-center mt-3 mb-4">
@@ -127,7 +127,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                 <div class="team-item text-center overflow-hidden">
                     <div class=" overflow-hidden m-4">
-                        <img class="img-fluid" src="https://hips.hearstapps.com/del.h-cdn.co/assets/15/28/1280x1280/square-1436548362-delish-christina-tosi-promo-fox.jpg?resize=1200:*" style="height:245px" alt="Thành viên 4">
+                        <img class="img-fluid" src="{{ asset('assets/imgs/tosi.jpg') }}" style="height:245px" alt="Thành viên 4">
                     </div>
                     <h5 class="mb-0">Christina Tosi</h5>
                     <div class="d-flex justify-content-center mt-3 mb-4">

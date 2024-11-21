@@ -197,6 +197,8 @@
                                                     <li><a class="dropdown-item" href="{{ route('dangxuat') }}">Đăng
                                                             xuất</a>
                                                     </li>
+                                                    <li><a class="dropdown-item" href="{{ route('changePass') }}">Đổi mật khẩu</a>
+                                                </li>
                                                 </ul>
                                             </div>
                                         @endif
@@ -269,7 +271,7 @@
                                         <a class="nav-link" href="{{ route('trangchu') }}">Câu hỏi thường gặp</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('trangchu') }}">Tuyển dụng</a>
+                                        <a class="nav-link" href="{{ route('tintuc') }}">Tuyển dụng</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ route('lienhe') }}">Liên hệ</a>

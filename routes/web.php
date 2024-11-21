@@ -37,13 +37,23 @@ Route::get('login', [UserController::class,"login"])->name('client.login');
 Route::post('login', [UserController::class,"postlogin"])->name('postlogin');
 // Route::get('dangky',[UserController::class,'dangky'])->name('dangky');
 // Route::post('dangky',[UserController::class,'postdangky'])->name('postdangky');
+// đăng nhập, đăng ký
 Route::get('register', [UserController::class,"register"])->name('register');
 Route::post('register', [UserController::class,"postregister"])->name('postregister');
 Route::get('dangxuat',[UserController::class,"logout"] )->name('dangxuat');
+// cập nhật thông tin
 Route::get('thong-tin',[UserController::class,"information"] )->name('thongTinUser');
 Route::get('sua-thong-tin',[UserController::class,"update"] )->name('updateTT');
 Route::post('sua-thong-tin',[UserController::class,"postUpdate"] )->name('postUpdate');
+// sản phẩm
 Route::get('product/{id}', [HomeController::class,"ShowProduct"])->name('showpro');
+// đổi mật khẩu
+Route::get('changePass', [UserController::class, 'changePass'])->name('changePass');
+Route::post('changePass', [UserController::class, 'postChangePass'])->name('postChangePass');
+// quên mật khẩu
+Route::get('resetPass', [UserController::class, 'resetPass'])->name('resetPass');
+Route::post('resetPass', [UserController::class, 'postResetPass'])->name('postResetPass');
+
 // route trang giao diện
 Route::get('gioithieu', [UserController::class,"about"])->name('gioithieu');
 Route::get('lienhe', [UserController::class,"contact"])->name('lienhe');

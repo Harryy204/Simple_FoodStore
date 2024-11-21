@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class AdminUserController extends Controller
 {  
@@ -21,7 +22,7 @@ class AdminUserController extends Controller
         ->insert([
             'hoten'=>$request->tentk,
             'sodienthoai'=>$request->sdt,
-            'matkhau'=>$request->mk,
+            'matkhau'=>Hash::make($request->mk),
             'diachi'=>$request->dc,
             'email'=>$request->email
         ]);

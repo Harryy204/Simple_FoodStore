@@ -51,6 +51,81 @@ class UserController extends Controller
         return redirect()->back()->withErrors(['error' => 'Email hoặc mật khẩu sai.']);
     }
 
+    // đổi mật khẩu
+    public function changePass() {
+        return view('Clients.changePass');
+    }
+    public function postChangePass(Request $request){
+        $id = Session::get('user');
+
+        $user = DB::table('users')->where('id_khachhang', '=', $id)->first();
+    
+        $validator = Validator::make($request->all(), [
+            'old_password' => 'required|string',
+            'new_password' => 'required|string|min:6|confirmed',
+            'new_password_confirmation' => 'required|string|min:6',
+        ], [
+            'old_password.required' => 'Mật khẩu cũ không được để trống.',
+            'new_password.required' => 'Mật khẩu mới không được để trống.',
+            'new_password_confirmation' => 'Xác nhận mật khẩu không được để trống.',
+            'new_password.min' => 'Mật khẩu mới phải có ít nhất 6 ký tự.',
+            'new_password.confirmed' => 'Mật khẩu mới và xác nhận mật khẩu không khớp.',
+        ]);
+    
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
+    
+        if (Hash::check($request->old_password, $user->matkhau)) {
+            $newPassword = Hash::make($request->new_password);
+    
+            DB::table('users')
+                ->where('id_khachhang', '=', $id)
+                ->update(['matkhau' => $newPassword]);
+            return redirect()->back()->with('success', 'Mật khẩu đã được cập nhật');
+        } else {
+            return redirect()->back()->with('error', 'Mật khẩu cũ không đúng!');
+        }
+    }
+    // quên mật khẩu
+    public function resetPass()
+    {
+        return view('Clients.resetPass');
+    }
+    public function postResetPass(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'email' => 'required|email|exists:users,email',  
+            'password' => 'required|string|min:6|confirmed', 
+        ], [
+            'email.required' => 'Vui lòng nhập email.',
+            'email.email' => 'Email không hợp lệ.',
+            'email.exists' => 'Không tìm thấy tài khoản với email này.',
+            'password.required' => 'Vui lòng nhập mật khẩu mới.',
+            'password.min' => 'Mật khẩu mới phải có ít nhất 6 ký tự.',
+            'password.confirmed' => 'Mật khẩu mới và xác nhận mật khẩu không khớp.',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
+
+        $user = DB::table('users')->where('email', $request->email)->first();
+
+        if ($user) {
+            $newPassword = Hash::make($request->password);
+
+            DB::table('users')
+                ->where('email', $request->email)
+                ->update(['matkhau' => $newPassword]);
+
+            return redirect()->back()->with('success', 'Mật khẩu của bạn đã được thay đổi!');
+        } else {
+            return redirect()->back()->with('error', 'Không tìm thấy tài khoản với email này.');
+        }
+    }
+
+    // đăng ký
     public function register(){
         return view("Clients.Register");
     }

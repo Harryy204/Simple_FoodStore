@@ -3,7 +3,7 @@
 @section('dashboard')
 <div class="container-xxl mt-4">
     <h4 class="mt-3 mb-4 text-center">Quản lý tài khoản người dùng</h4>
-    {{-- <form action="{{ route('user.postcreate') }}" method="post" enctype="multipart/form-data">
+    <form action="{{ route('user.postcreate') }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="card shadow-sm">
             <div class="card-body">
@@ -43,7 +43,7 @@
                 </div>
             </div>
         </div>
-    </form> --}}
+    </form>
 
     <div class="mt-5">
         <p class="fs-5 fw-semibold text-center">Danh sách người dùng</p>

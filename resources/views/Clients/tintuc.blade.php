@@ -80,11 +80,11 @@
                                     <a href="#" class="text-dark fw-bold">Tìm hiểu về ẩm thực Việt Nam và các nước trên thế giới</a>
                                 </h5>
                                 <div class="d-flex align-items-center mt-3">
-                                    <img src="https://static-00.iconduck.com/assets.00/user-icon-1024x1024-dtzturco.png" alt="Hình ảnh tác giả"
+                                    <img src="{{ asset('assets/imgs/admin.png') }}" alt="Hình ảnh tác giả"
                                         class="img-fluid post-author-img flex-shrink-0 rounded-circle"
                                         style="width: 40px; height: 40px;">
                                     <div class="post-meta ms-2">
-                                        <p class="post-author mb-0">Maria Doe</p>
+                                        <p class="post-author mb-0">Admin</p>
                                         <p class="post-date mb-0"><time datetime="2024-01-01">1 Tháng 1, 2024</time></p>
                                     </div>
                                 </div>
@@ -101,7 +101,7 @@
                                     <a href="#" class="text-dark fw-bold">Tìm hiểu về ẩm thực Việt Nam và các nước trên thế giới</a>
                                 </h5>
                                 <div class="d-flex align-items-center mt-3">
-                                    <img src="https://static-00.iconduck.com/assets.00/user-icon-1024x1024-dtzturco.png" alt="Hình ảnh tác giả"
+                                    <img src="{{ asset('assets/imgs/admin.png') }}" alt="Hình ảnh tác giả"
                                         class="img-fluid post-author-img flex-shrink-0 rounded-circle"
                                         style="width: 40px; height: 40px;">
                                     <div class="post-meta ms-2">
@@ -122,7 +122,7 @@
                                     <a href="#" class="text-dark fw-bold">Tìm hiểu về ẩm thực Việt Nam và các nước trên thế giới</a>
                                 </h5>
                                 <div class="d-flex align-items-center mt-3">
-                                    <img src="https://static-00.iconduck.com/assets.00/user-icon-1024x1024-dtzturco.png" alt="Hình ảnh tác giả"
+                                    <img src="{{ asset('assets/imgs/admin.png') }}" alt="Hình ảnh tác giả"
                                         class="img-fluid post-author-img flex-shrink-0 rounded-circle"
                                         style="width: 40px; height: 40px;">
                                     <div class="post-meta ms-2">
@@ -143,7 +143,7 @@
                                     <a href="#" class="text-dark fw-bold">Tìm hiểu về ẩm thực Việt Nam và các nước trên thế giới</a>
                                 </h5>
                                 <div class="d-flex align-items-center mt-3">
-                                    <img src="https://static-00.iconduck.com/assets.00/user-icon-1024x1024-dtzturco.png" alt="Hình ảnh tác giả"
+                                    <img src="{{ asset('assets/imgs/admin.png') }}" alt="Hình ảnh tác giả"
                                         class="img-fluid post-author-img flex-shrink-0 rounded-circle"
                                         style="width: 40px; height: 40px;">
                                     <div class="post-meta ms-2">
@@ -164,7 +164,7 @@
                                     <a href="#" class="text-dark fw-bold">Tìm hiểu về ẩm thực Việt Nam và các nước trên thế giới</a>
                                 </h5>
                                 <div class="d-flex align-items-center mt-3">
-                                    <img src="https://static-00.iconduck.com/assets.00/user-icon-1024x1024-dtzturco.png" alt="Hình ảnh tác giả"
+                                    <img src="{{ asset('assets/imgs/admin.png') }}" alt="Hình ảnh tác giả"
                                         class="img-fluid post-author-img flex-shrink-0 rounded-circle"
                                         style="width: 40px; height: 40px;">
                                     <div class="post-meta ms-2">
@@ -185,7 +185,7 @@
                                     <a href="#" class="text-dark fw-bold">Tìm hiểu về ẩm thực Việt Nam và các nước trên thế giới</a>
                                 </h5>
                                 <div class="d-flex align-items-center mt-3">
-                                    <img src="https://static-00.iconduck.com/assets.00/user-icon-1024x1024-dtzturco.png" alt="Hình ảnh tác giả"
+                                    <img src="{{ asset('assets/imgs/admin.png') }}" alt="Hình ảnh tác giả"
                                         class="img-fluid post-author-img flex-shrink-0 rounded-circle"
                                         style="width: 40px; height: 40px;">
                                     <div class="post-meta ms-2">
